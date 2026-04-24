@@ -43,6 +43,10 @@ body {
     padding: 16px 0;
     border-bottom: 1px solid rgba(222,214,202,0.5);
     box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 100;
 }
 
 .navbar .container {
@@ -386,15 +390,15 @@ body {
     margin-top: 20px;
     background: var(--footer);
     color: #fff;
-    padding: 28px 0 22px;
+    padding: 40px 0 32px;
 }
 
 .footer-icons {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 20px;
     align-items: center;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
 }
 
 .footer-item {
@@ -415,6 +419,8 @@ body {
     text-align: center;
     color: #d4d9e2;
     font-size: 14px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 @media (max-width: 767px) {
@@ -449,6 +455,15 @@ body {
 
     .signature {
         font-size: 22px;
+    }
+
+    .footer {
+        padding: 48px 0 36px;
+    }
+
+    .footer-icons {
+        gap: 28px;
+        margin-bottom: 36px;
     }
 }
 
